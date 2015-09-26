@@ -1,16 +1,8 @@
 #!/usr/bin/env bash
 
-dbname='td'
-dbuser='td'
-dbpassword='blabla'
-dbhost='td.cqyqnvpzpijx.us-west-2.rds.amazonaws.com'
-wp_url='192.168.33.10'
+# run locally stored secret env vars
+source /vagrant/local/secretes.sh
 
-# dbname='dio'
-# dbuser='dio'
-# dbpassword='blabla'
-# dbhost='dio.cqyqnvpzpijx.us-west-2.rds.amazonaws.com'
-# wp_url='http://deterministic.io'
 # install components
 sudo apt-get update
 
@@ -42,11 +34,11 @@ fi
 
 # sync to correct directory
 sudo rsync -avP ~/wordpress/ /var/www/html/
-rm -f /var/www/html/index.html #remove old apache default index html file
+sudo rm -f /var/www/html/index.html #remove old apache default index html file
 
 cd /var/www/html
 sudo chown -R ubuntu:www-data *
-mkdir /var/www/html/wp-content/uploads
+sudo mkdir /var/www/html/wp-content/uploads
 sudo chown -R :www-data /var/www/html/wp-content/uploads
 
 # restart apache
