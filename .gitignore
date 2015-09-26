@@ -103,3 +103,7 @@ atlassian-ide-plugin.xml
 
 # script generated files	      #
 #######################################
+
+# local secretes        	      #
+#######################################
+/local
