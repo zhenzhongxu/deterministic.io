@@ -7,10 +7,10 @@ source /vagrant/local/secretes.sh
 sudo apt-get update
 
 # install apache
-sudo apt-get install -y apache2
+sudo apt-get install -y --force-yes apache2
 
 # install php
-sudo apt-get install -y php5 libapache2-mod-php5 php5-mcrypt php5-gd libssh2-php php5-mysql
+sudo apt-get install -y --force-yes php5 libapache2-mod-php5 php5-mcrypt php5-gd libssh2-php php5-mysql
 
 # install word press
 cd ~

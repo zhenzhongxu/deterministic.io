@@ -2,12 +2,12 @@
 www.deterministic.io
 
 Prerequisits:
-* Vagrant[https://www.vagrantup.com/]
-* Vagrant plugin: vagrant-aws
-'''vagrant plugin install vagrant-aws'''
+* install Vagrant [https://www.vagrantup.com/]
+* install other necessary plugins (run this once) <br/>
+```./bin/init.sh```
 
-To deploy to remote aws instance:
-'''vagrant up --provider=virtualbox '''
+To deploy to remote aws instance:<br/>
+```vagrant up --provider=virtualbox```
 
-To deploy to local virtualbox:
-'''vagrant up --provider=aws '''
+To deploy to local virtualbox:<br/>
+```source ./local/secretes.sh && vagrant up --provider=aws```
