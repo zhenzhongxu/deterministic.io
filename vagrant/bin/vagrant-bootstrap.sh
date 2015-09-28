@@ -58,6 +58,7 @@ wp plugin update --path=/var/www/html --all
 wp plugin install google-analytics-for-wordpress --path=/var/www/html
 wp plugin install amazon-web-services  --path=/var/www/html
 wp plugin install amazon-s3-and-cloudfront --path=/var/www/html
+wp plugin install wordpress-mobile-pack --path=/var/www/html
 wp plugin activate --path=/var/www/html --all
 
 # install theme

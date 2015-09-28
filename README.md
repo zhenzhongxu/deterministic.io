@@ -8,12 +8,12 @@ Prerequisits:
 ./bin/init.sh
 ```
 
-To deploy to remote aws instance: <br/>
+To deploy to local virtualbox:<br/>
 ```
 vagrant up --provider=virtualbox
 ```
 
-To deploy to local virtualbox:<br/>
+To deploy to remote aws instance: <br/>
 ```
 source ./local/secretes.sh && vagrant up --provider=aws
 ```
